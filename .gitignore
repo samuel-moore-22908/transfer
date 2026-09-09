@@ -1,0 +1,5 @@
+# Downloaded sources live in each task's raw/, which ignores its own contents.
+
+# Python
+__pycache__/
+*.pyc
