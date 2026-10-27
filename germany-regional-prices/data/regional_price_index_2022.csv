@@ -1,0 +1,401 @@
+ags,kreis,state,rpi_total_2022,rpi_excl_housing_2022,rpi_housing_2022
+01001,Flensburg,Schleswig-Holstein,97.9,99.8,93.2
+01002,Kiel,Schleswig-Holstein,101.3,100.9,102.3
+01003,Lübeck,Schleswig-Holstein,101.5,100.7,103.5
+01004,Neumünster,Schleswig-Holstein,97.1,100.4,89.2
+01051,Dithmarschen,Schleswig-Holstein,95.0,98.9,85.5
+01053,Herzogtum Lauenburg,Schleswig-Holstein,100.2,100.3,99.9
+01054,Nordfriesland,Schleswig-Holstein,97.6,99.6,92.6
+01055,Ostholstein,Schleswig-Holstein,100.6,100.4,101.0
+01056,Kreis Pinneberg,Schleswig-Holstein,104.0,100.7,111.8
+01057,Plön,Schleswig-Holstein,99.6,100.4,97.7
+01058,Rendsburg-Eckernförde,Schleswig-Holstein,97.9,99.9,93.1
+01059,Schleswig-Flensburg,Schleswig-Holstein,96.5,99.3,89.8
+01060,Kreis Segeberg,Schleswig-Holstein,102.7,100.2,108.8
+01061,Kreis Steinburg,Schleswig-Holstein,95.9,99.4,87.6
+01062,Stormarn,Schleswig-Holstein,104.3,100.5,113.4
+02000,Hamburg,Hamburg,111.5,101.4,136.2
+03101,Braunschweig,Niedersachsen,100.0,100.1,100.0
+03102,Salzgitter,Niedersachsen,94.4,100.1,80.5
+03103,Wolfsburg,Niedersachsen,100.8,100.3,102.0
+03151,Gifhorn,Niedersachsen,96.8,99.5,90.3
+03153,Landkreis Goslar,Niedersachsen,92.8,99.4,77.0
+03154,Landkreis Helmstedt,Niedersachsen,93.7,99.7,78.9
+03155,Landkreis Northeim,Niedersachsen,92.5,99.6,75.3
+03157,Landkreis Peine,Niedersachsen,95.6,99.5,86.1
+03158,Landkreis Wolfenbüttel,Niedersachsen,96.3,99.5,88.5
+03159,Landkreis Göttingen,Niedersachsen,98.3,99.5,95.4
+03241,Region Hannover,Niedersachsen,100.8,100.2,102.2
+03251,Landkreis Diepholz,Niedersachsen,96.5,99.4,89.4
+03252,Landkreis Hameln-Pyrmont,Niedersachsen,93.6,100.2,77.3
+03254,Landkreis Hildesheim,Niedersachsen,94.9,99.6,83.7
+03255,Landkreis Holzminden,Niedersachsen,91.3,100.0,70.3
+03256,Landkreis Nienburg/Weser,Niedersachsen,93.2,98.8,79.6
+03257,Landkreis Schaumburg,Niedersachsen,94.2,99.9,80.3
+03351,Landkreis Celle,Niedersachsen,95.5,99.6,85.8
+03352,Landkreis Cuxhaven,Niedersachsen,94.8,99.3,83.6
+03353,Harburg,Niedersachsen,102.7,100.3,108.5
+03354,Lüchow-Dannenberg,Niedersachsen,91.1,99.2,71.4
+03355,Lüneburg,Niedersachsen,101.6,99.8,106.0
+03356,Landkreis Osterholz,Niedersachsen,97.6,100.8,90.0
+03357,Landkreis Rotenburg (Wümme),Niedersachsen,95.7,99.8,85.8
+03358,Heidekreis,Niedersachsen,94.4,99.2,82.9
+03359,Stade,Niedersachsen,99.4,99.8,98.5
+03360,Uelzen,Niedersachsen,93.7,99.2,80.3
+03361,Landkreis Verden,Niedersachsen,98.4,100.4,93.4
+03401,Delmenhorst,Niedersachsen,96.4,99.2,89.6
+03402,Emden,Niedersachsen,95.0,98.8,85.6
+03403,Oldenburg,Niedersachsen,101.9,100.8,104.7
+03404,Osnabrück,Niedersachsen,99.8,100.2,99.0
+03405,Wilhelmshaven,Niedersachsen,93.4,99.4,79.0
+03451,Landkreis Ammerland,Niedersachsen,97.3,100.1,90.5
+03452,Landkreis Aurich,Niedersachsen,95.3,98.7,87.0
+03453,Landkreis Cloppenburg,Niedersachsen,93.8,99.0,81.1
+03454,Landkreis Emsland,Niedersachsen,94.3,98.7,83.7
+03455,Landkreis Friesland,Niedersachsen,94.7,99.2,83.6
+03456,Landkreis Grafschaft Bentheim,Niedersachsen,95.0,98.8,85.8
+03457,Landkreis Leer,Niedersachsen,94.3,98.3,84.4
+03458,Landkreis Oldenburg,Niedersachsen,96.5,99.7,88.9
+03459,Landkreis Osnabrück,Niedersachsen,95.1,99.6,84.1
+03460,Landkreis Vechta,Niedersachsen,95.8,99.6,86.6
+03461,Landkreis Wesermarsch,Niedersachsen,92.7,99.5,76.1
+03462,Landkreis Wittmund,Niedersachsen,93.8,98.9,81.5
+04011,Bremen,Bremen,101.4,100.2,104.3
+04012,Bremerhaven,Bremen,93.9,100.0,79.3
+05111,Düsseldorf,Nordrhein-Westfalen,108.5,101.2,126.2
+05112,Duisburg,Nordrhein-Westfalen,96.0,100.1,86.2
+05113,Essen,Nordrhein-Westfalen,98.7,99.9,95.7
+05114,Krefeld,Nordrhein-Westfalen,98.2,99.7,94.6
+05116,Mönchengladbach,Nordrhein-Westfalen,97.1,99.1,92.4
+05117,Mülheim an der Ruhr,Nordrhein-Westfalen,98.8,100.0,95.8
+05119,Oberhausen,Nordrhein-Westfalen,95.5,99.6,85.5
+05120,Remscheid,Nordrhein-Westfalen,96.1,100.7,84.8
+05122,Solingen,Nordrhein-Westfalen,98.2,99.7,94.6
+05124,Wuppertal,Nordrhein-Westfalen,96.6,99.6,89.2
+05154,Kreis Kleve,Nordrhein-Westfalen,96.1,99.2,88.5
+05158,Kreis Mettmann,Nordrhein-Westfalen,101.2,100.2,103.5
+05162,Rhein-Kreis Neuss,Nordrhein-Westfalen,101.5,99.7,105.8
+05166,Kreis Viersen,Nordrhein-Westfalen,97.1,98.8,93.2
+05170,Kreis Wesel,Nordrhein-Westfalen,96.9,99.9,89.8
+05314,Bonn,Nordrhein-Westfalen,106.8,100.4,122.4
+05315,Köln,Nordrhein-Westfalen,109.4,100.4,131.1
+05316,Leverkusen,Nordrhein-Westfalen,101.7,100.2,105.2
+05334,Städteregion Aachen,Nordrhein-Westfalen,100.2,99.7,101.4
+05358,Kreis Düren,Nordrhein-Westfalen,96.6,100.0,88.3
+05362,Rhein-Erft-Kreis,Nordrhein-Westfalen,102.0,99.6,107.6
+05366,Kreis Euskirchen,Nordrhein-Westfalen,96.6,99.7,89.1
+05370,Kreis Heinsberg,Nordrhein-Westfalen,96.5,100.0,87.9
+05374,Oberbergischer Kreis,Nordrhein-Westfalen,95.9,100.4,85.0
+05378,Rheinisch-Bergischer Kreis,Nordrhein-Westfalen,101.3,99.8,104.9
+05382,Rhein-Sieg-Kreis,Nordrhein-Westfalen,101.3,99.9,104.6
+05512,Bottrop,Nordrhein-Westfalen,96.7,99.6,89.8
+05513,Gelsenkirchen,Nordrhein-Westfalen,94.9,100.8,80.6
+05515,Münster,Nordrhein-Westfalen,106.6,100.6,121.0
+05554,Kreis Borken,Nordrhein-Westfalen,96.3,99.2,89.2
+05558,Kreis Coesfeld,Nordrhein-Westfalen,96.1,99.1,88.8
+05562,Kreis Recklinghausen,Nordrhein-Westfalen,95.9,100.1,85.7
+05566,Kreis Steinfurt,Nordrhein-Westfalen,95.6,99.3,86.7
+05570,Kreis Warendorf,Nordrhein-Westfalen,95.5,99.3,86.2
+05711,Bielefeld,Nordrhein-Westfalen,98.4,99.6,95.6
+05754,Kreis Gütersloh,Nordrhein-Westfalen,96.4,99.1,89.8
+05758,Kreis Herford,Nordrhein-Westfalen,95.1,99.9,83.3
+05762,Kreis Höxter,Nordrhein-Westfalen,92.6,101.0,72.2
+05766,Kreis Lippe,Nordrhein-Westfalen,95.2,100.2,83.0
+05770,Kreis Minden-Lübbecke,Nordrhein-Westfalen,95.0,99.3,84.5
+05774,Kreis Paderborn,Nordrhein-Westfalen,96.8,99.2,91.0
+05911,Bochum,Nordrhein-Westfalen,97.9,100.1,92.5
+05913,Dortmund,Nordrhein-Westfalen,97.9,99.5,94.2
+05914,Hagen,Nordrhein-Westfalen,95.3,101.3,80.7
+05915,Hamm,Nordrhein-Westfalen,94.7,99.5,83.0
+05916,Herne,Nordrhein-Westfalen,96.0,100.7,84.3
+05954,Ennepe-Ruhr-Kreis,Nordrhein-Westfalen,95.9,99.4,87.2
+05958,Hochsauerlandkreis,Nordrhein-Westfalen,93.7,100.4,77.4
+05962,Märkischer Kreis,Nordrhein-Westfalen,94.9,100.2,82.2
+05966,Kreis Olpe,Nordrhein-Westfalen,96.8,100.7,87.3
+05970,Kreis Siegen-Wittgenstein,Nordrhein-Westfalen,97.3,100.0,90.7
+05974,Kreis Soest,Nordrhein-Westfalen,95.4,99.7,85.1
+05978,Kreis Unna,Nordrhein-Westfalen,95.3,99.1,85.9
+06411,Darmstadt,Hessen,109.2,100.5,130.5
+06412,Frankfurt am Main,Hessen,115.9,100.7,152.7
+06413,Offenbach am Main,Hessen,106.4,99.7,122.8
+06414,Wiesbaden,Hessen,108.0,101.0,125.0
+06431,Kreis Bergstraße,Hessen,101.0,99.9,103.7
+06432,Landkreis Darmstadt-Dieburg,Hessen,102.9,100.3,109.2
+06433,Kreis Groß-Gerau,Hessen,104.4,99.8,115.5
+06434,Hochtaunuskreis,Hessen,108.3,99.8,129.1
+06435,Main-Kinzig-Kreis,Hessen,101.6,99.7,106.2
+06436,Main-Taunus-Kreis,Hessen,107.7,99.6,127.4
+06437,Odenwaldkreis,Hessen,96.8,99.5,90.4
+06438,Landkreis Offenbach,Hessen,105.9,100.7,118.6
+06439,Rheingau-Taunus-Kreis,Hessen,101.8,100.2,105.6
+06440,Wetteraukreis,Hessen,102.0,99.5,107.9
+06531,Landkreis Gießen,Hessen,101.3,99.7,105.2
+06532,Lahn-Dill-Kreis,Hessen,97.3,99.7,91.3
+06533,Landkreis Limburg-Weilburg,Hessen,96.5,99.5,89.0
+06534,Landkreis Marburg-Biedenkopf,Hessen,101.6,99.2,107.4
+06535,Vogelsbergkreis,Hessen,92.9,99.3,77.2
+06611,Kassel,Hessen,99.9,100.6,98.0
+06631,Landkreis Fulda,Hessen,97.2,99.3,92.2
+06632,Landkreis Hersfeld-Rotenburg,Hessen,94.1,99.9,80.0
+06633,Landkreis Kassel,Hessen,95.8,99.9,86.0
+06634,Schwalm-Eder-Kreis,Hessen,93.7,99.9,78.5
+06635,Landkreis Waldeck-Frankenberg,Hessen,94.0,100.3,78.7
+06636,Werra-Meißner-Kreis,Hessen,91.8,99.5,73.1
+07111,Koblenz,Rheinland-Pfalz,99.7,100.0,99.1
+07131,Landkreis Ahrweiler,Rheinland-Pfalz,97.7,100.2,91.8
+07132,Landkreis Altenkirchen,Rheinland-Pfalz,93.6,100.2,77.5
+07133,Landkreis Bad Kreuznach,Rheinland-Pfalz,97.0,99.8,90.2
+07134,Landkreis Birkenfeld,Rheinland-Pfalz,92.6,99.2,76.5
+07135,Landkreis Cochem-Zell,Rheinland-Pfalz,92.0,100.1,72.1
+07137,Landkreis Mayen-Koblenz,Rheinland-Pfalz,95.1,99.6,84.3
+07138,Landkreis Neuwied,Rheinland-Pfalz,95.5,99.6,85.4
+07140,Rhein-Hunsrück-Kreis,Rheinland-Pfalz,92.9,99.3,77.4
+07141,Rhein-Lahn-Kreis,Rheinland-Pfalz,94.5,99.7,82.1
+07143,Westerwaldkreis,Rheinland-Pfalz,95.5,100.0,84.7
+07211,Trier,Rheinland-Pfalz,104.3,101.4,111.2
+07231,Landkreis Bernkastel-Wittlich,Rheinland-Pfalz,94.2,99.5,81.3
+07232,Eifelkreis Bitburg-Prüm,Rheinland-Pfalz,98.0,100.6,91.7
+07233,Landkreis Vulkaneifel,Rheinland-Pfalz,91.9,99.9,72.6
+07235,Landkreis Trier-Saarburg,Rheinland-Pfalz,98.3,100.8,92.1
+07311,Frankenthal (Pfalz),Rheinland-Pfalz,98.9,99.5,97.5
+07312,Kaiserslautern,Rheinland-Pfalz,97.9,99.8,93.2
+07313,Landau in der Pfalz,Rheinland-Pfalz,100.7,99.2,104.3
+07314,Ludwigshafen am Rhein,Rheinland-Pfalz,101.0,99.8,104.0
+07315,Mainz,Rheinland-Pfalz,109.6,100.6,131.4
+07316,Neustadt an der Weinstraße,Rheinland-Pfalz,98.7,98.8,98.6
+07317,Pirmasens,Rheinland-Pfalz,90.7,99.2,70.1
+07318,Speyer,Rheinland-Pfalz,101.6,99.1,107.5
+07319,Worms,Rheinland-Pfalz,99.3,99.7,98.4
+07320,Zweibrücken,Rheinland-Pfalz,94.4,100.0,80.9
+07331,Landkreis Alzey-Worms,Rheinland-Pfalz,97.3,99.2,93.0
+07332,Landkreis Bad Dürkheim,Rheinland-Pfalz,98.2,99.5,95.0
+07333,Donnersbergkreis,Rheinland-Pfalz,95.0,99.7,83.6
+07334,Landkreis Germersheim,Rheinland-Pfalz,99.5,99.2,100.3
+07335,Landkreis Kaiserslautern,Rheinland-Pfalz,95.3,99.8,84.2
+07336,Landkreis Kusel,Rheinland-Pfalz,93.4,100.0,77.4
+07337,Landkreis Südliche Weinstraße,Rheinland-Pfalz,98.0,99.2,95.2
+07338,Rhein-Pfalz-Kreis,Rheinland-Pfalz,98.8,99.2,98.0
+07339,Landkreis Mainz-Bingen,Rheinland-Pfalz,101.8,100.7,104.4
+07340,Südwestpfalz,Rheinland-Pfalz,92.8,99.7,76.2
+08111,Stuttgart,Baden-Württemberg,114.8,104.2,140.6
+08115,Landkreis Böblingen,Baden-Württemberg,107.1,100.4,123.5
+08116,Landkreis Esslingen,Baden-Württemberg,105.9,100.0,120.4
+08117,Landkreis Göppingen,Baden-Württemberg,100.9,99.9,103.2
+08118,Landkreis Ludwigsburg,Baden-Württemberg,106.2,100.8,119.4
+08119,Rems-Murr-Kreis,Baden-Württemberg,104.2,100.0,114.4
+08121,Heilbronn,Baden-Württemberg,104.0,100.3,112.9
+08125,Landkreis Heilbronn,Baden-Württemberg,101.7,100.0,105.8
+08126,Hohenlohekreis,Baden-Württemberg,99.3,98.9,100.1
+08127,Landkreis Schwäbisch Hall,Baden-Württemberg,98.8,99.4,97.4
+08128,Main-Tauber-Kreis,Baden-Württemberg,95.8,100.2,85.1
+08135,Landkreis Heidenheim,Baden-Württemberg,98.3,100.2,93.9
+08136,Ostalbkreis,Baden-Württemberg,99.7,100.2,98.5
+08211,Baden-Baden,Baden-Württemberg,103.0,99.5,111.5
+08212,Karlsruhe,Baden-Württemberg,106.0,100.1,120.2
+08215,Landkreis Karlsruhe,Baden-Württemberg,101.0,99.9,103.6
+08216,Landkreis Rastatt,Baden-Württemberg,99.6,99.4,100.2
+08221,Heidelberg,Baden-Württemberg,111.5,101.6,135.8
+08222,Mannheim,Baden-Württemberg,104.7,100.9,114.0
+08225,Neckar-Odenwald-Kreis,Baden-Württemberg,95.8,99.4,87.2
+08226,Rhein-Neckar-Kreis,Baden-Württemberg,101.5,99.8,105.7
+08231,Pforzheim,Baden-Württemberg,100.3,100.1,100.8
+08235,Landkreis Calw,Baden-Württemberg,98.8,99.8,96.4
+08236,Enzkreis,Baden-Württemberg,99.9,100.2,99.4
+08237,Landkreis Freudenstadt,Baden-Württemberg,97.3,100.0,90.7
+08311,Freiburg im Breisgau,Baden-Württemberg,112.7,101.6,139.7
+08315,Landkreis Breisgau-Hochschwarzwald,Baden-Württemberg,104.0,100.6,112.2
+08316,Landkreis Emmendingen,Baden-Württemberg,103.1,100.7,108.8
+08317,Ortenaukreis,Baden-Württemberg,99.7,100.0,98.9
+08325,Landkreis Rottweil,Baden-Württemberg,96.9,99.8,89.7
+08326,Schwarzwald-Baar-Kreis,Baden-Württemberg,98.4,100.2,93.9
+08327,Landkreis Tuttlingen,Baden-Württemberg,97.6,99.2,94.0
+08335,Landkreis Konstanz,Baden-Württemberg,105.0,99.4,118.7
+08336,Landkreis Lörrach,Baden-Württemberg,105.1,100.8,115.6
+08337,Landkreis Waldshut,Baden-Württemberg,99.8,100.1,98.9
+08415,Landkreis Reutlingen,Baden-Württemberg,103.9,100.3,112.6
+08416,Landkreis Tübingen,Baden-Württemberg,106.1,100.2,120.4
+08417,Zollernalbkreis,Baden-Württemberg,97.6,99.7,92.4
+08421,Ulm,Baden-Württemberg,106.0,100.9,118.2
+08425,Alb-Donau-Kreis,Baden-Württemberg,100.9,100.5,101.8
+08426,Landkreis Biberach,Baden-Württemberg,100.3,100.5,99.8
+08435,Bodenseekreis,Baden-Württemberg,104.2,99.5,115.5
+08436,Landkreis Ravensburg,Baden-Württemberg,102.3,100.5,106.9
+08437,Landkreis Sigmaringen,Baden-Württemberg,96.2,99.7,87.8
+09161,Ingolstadt,Bayern,108.4,100.4,127.7
+09162,München,Bayern,125.1,102.1,180.9
+09163,Rosenheim,Bayern,106.1,100.9,118.6
+09171,Landkreis Altötting,Bayern,96.7,100.2,88.3
+09172,Landkreis Berchtesgadener Land,Bayern,103.1,101.3,107.4
+09173,Landkreis Bad Tölz-Wolfratshausen,Bayern,107.8,100.3,125.8
+09174,Landkreis Dachau,Bayern,110.1,100.7,132.9
+09175,Landkreis Ebersberg,Bayern,110.7,101.2,133.7
+09176,Landkreis Eichstätt,Bayern,101.2,100.0,104.2
+09177,Landkreis Erding,Bayern,106.8,100.8,121.4
+09178,Landkreis Freising,Bayern,108.0,100.3,126.7
+09179,Landkreis Fürstenfeldbruck,Bayern,111.3,100.8,136.7
+09180,Landkreis Garmisch-Partenkirchen,Bayern,104.8,99.9,116.9
+09181,Landkreis Landsberg am Lech,Bayern,105.0,100.5,115.8
+09182,Landkreis Miesbach,Bayern,109.8,100.7,131.8
+09183,Landkreis Mühldorf am Inn,Bayern,98.8,100.2,95.3
+09184,Landkreis München,Bayern,116.7,101.1,154.6
+09185,Landkreis Neuburg-Schrobenhausen,Bayern,101.7,99.9,106.1
+09186,Landkreis Pfaffenhofen an der Ilm,Bayern,101.4,99.7,105.6
+09187,Landkreis Rosenheim,Bayern,104.5,100.9,113.1
+09188,Landkreis Starnberg,Bayern,114.3,101.1,146.3
+09189,Landkreis Traunstein,Bayern,101.7,100.9,103.6
+09190,Landkreis Weilheim-Schongau,Bayern,104.3,100.9,112.6
+09261,Landshut,Bayern,104.1,100.8,111.9
+09262,Passau,Bayern,101.4,100.3,104.0
+09263,Straubing,Bayern,98.4,100.0,94.4
+09271,Landkreis Deggendorf,Bayern,97.3,99.9,91.2
+09272,Landkreis Freyung-Grafenau,Bayern,92.0,100.2,72.0
+09273,Landkreis Kelheim,Bayern,99.6,100.3,97.8
+09274,Landkreis Landshut,Bayern,98.7,100.8,93.7
+09275,Landkreis Passau,Bayern,95.5,100.3,84.1
+09276,Landkreis Regen,Bayern,92.1,99.8,73.4
+09277,Landkreis Rottal-Inn,Bayern,95.5,100.3,83.8
+09278,Landkreis Straubing-Bogen,Bayern,94.9,99.5,83.8
+09279,Landkreis Dingolfing-Landau,Bayern,95.8,100.3,84.8
+09361,Amberg,Bayern,97.7,100.4,90.9
+09362,Regensburg,Bayern,107.9,100.7,125.2
+09363,Weiden in der Oberpfalz,Bayern,97.2,100.3,89.8
+09371,Landkreis Amberg-Sulzbach,Bayern,95.1,100.1,83.0
+09372,Landkreis Cham,Bayern,93.7,99.4,80.1
+09373,Landkreis Neumarkt in der Oberpfalz,Bayern,100.0,100.3,99.1
+09374,Landkreis Neustadt an der Waldnaab,Bayern,92.8,100.1,75.2
+09375,Landkreis Regensburg,Bayern,100.5,100.3,101.0
+09376,Landkreis Schwandorf,Bayern,95.9,100.4,85.0
+09377,Landkreis Tirschenreuth,Bayern,91.4,99.3,72.2
+09461,Bamberg,Bayern,102.9,100.2,109.6
+09462,Bayreuth,Bayern,100.8,99.3,104.4
+09463,Coburg,Bayern,97.9,100.0,92.7
+09464,Hof,Bayern,92.7,99.8,75.6
+09471,Landkreis Bamberg,Bayern,96.9,100.2,88.8
+09472,Landkreis Bayreuth,Bayern,95.2,99.9,83.9
+09473,Landkreis Coburg,Bayern,94.0,99.7,80.3
+09474,Landkreis Forchheim,Bayern,98.9,100.0,96.4
+09475,Landkreis Hof,Bayern,91.4,99.8,71.1
+09476,Landkreis Kronach,Bayern,94.2,99.7,80.6
+09477,Landkreis Kulmbach,Bayern,94.5,99.7,82.0
+09478,Landkreis Lichtenfels,Bayern,94.4,99.9,81.1
+09479,Landkreis Wunsiedel im Fichtelgebirge,Bayern,90.8,99.2,70.2
+09561,Ansbach,Bayern,98.0,99.5,94.2
+09562,Erlangen,Bayern,107.5,100.6,124.2
+09563,Fürth,Bayern,103.0,100.3,109.5
+09564,Nürnberg,Bayern,104.5,100.9,113.3
+09565,Schwabach,Bayern,101.5,101.3,101.8
+09571,Landkreis Ansbach,Bayern,95.5,99.5,85.9
+09572,Landkreis Erlangen-Höchstadt,Bayern,101.1,100.1,103.5
+09573,Landkreis Fürth,Bayern,100.9,100.5,101.8
+09574,Landkreis Nürnberger Land,Bayern,100.2,100.8,98.6
+09575,Landkreis Neustadt an der Aisch-Bad Windsheim,Bayern,95.7,99.8,85.8
+09576,Landkreis Roth,Bayern,98.4,100.6,93.0
+09577,Landkreis Weißenburg-Gunzenhausen,Bayern,95.3,99.7,84.6
+09661,Aschaffenburg,Bayern,104.0,101.8,109.2
+09662,Schweinfurt,Bayern,96.9,100.5,88.2
+09663,Würzburg,Bayern,104.9,100.2,116.3
+09671,Landkreis Aschaffenburg,Bayern,99.8,100.4,98.4
+09672,Landkreis Bad Kissingen,Bayern,94.3,99.9,80.6
+09673,Landkreis Rhön-Grabfeld,Bayern,93.2,99.7,77.5
+09674,Landkreis Haßberge,Bayern,94.0,100.0,79.3
+09675,Landkreis Kitzingen,Bayern,96.6,100.0,88.4
+09676,Landkreis Miltenberg,Bayern,97.7,101.2,89.3
+09677,Landkreis Main-Spessart,Bayern,95.5,99.9,84.8
+09678,Landkreis Schweinfurt,Bayern,95.5,100.2,84.2
+09679,Landkreis Würzburg,Bayern,99.1,99.9,97.3
+09761,Augsburg,Bayern,105.2,100.9,115.9
+09762,Kaufbeuren,Bayern,98.3,99.7,94.8
+09763,Kempten (Allgäu),Bayern,102.2,100.7,105.9
+09764,Memmingen,Bayern,101.5,100.6,103.5
+09771,Landkreis Aichach-Friedberg,Bayern,101.6,100.1,105.2
+09772,Landkreis Augsburg,Bayern,101.1,100.1,103.7
+09773,Landkreis Dillingen an der Donau,Bayern,98.2,100.2,93.4
+09774,Landkreis Günzburg,Bayern,98.8,100.4,95.0
+09775,Landkreis Neu-Ulm,Bayern,102.7,100.1,108.9
+09776,Landkreis Lindau,Bayern,105.1,100.1,117.3
+09777,Landkreis Ostallgäu,Bayern,100.1,100.2,99.8
+09778,Landkreis Unterallgäu,Bayern,99.5,100.9,95.9
+09779,Landkreis Donau-Ries,Bayern,97.4,99.3,92.6
+09780,Landkreis Oberallgäu,Bayern,100.1,100.3,99.7
+10041,Regionalverband Saarbrücken,Saarland,97.7,99.8,92.6
+10042,Landkreis Merzig-Wadern,Saarland,97.0,99.6,90.5
+10043,Landkreis Neunkirchen,Saarland,94.5,100.0,81.2
+10044,Landkreis Saarlouis,Saarland,96.5,99.9,88.3
+10045,Saarpfalz-Kreis,Saarland,96.7,99.8,89.1
+10046,Landkreis St. Wendel,Saarland,95.5,99.5,85.7
+11000,Berlin,Berlin,105.5,100.5,117.8
+12051,Brandenburg an der Havel,Brandenburg,93.9,98.9,81.9
+12052,Cottbus - Chóśebuz,Brandenburg,94.6,99.6,82.6
+12053,Frankfurt (Oder),Brandenburg,94.3,99.3,82.1
+12054,Potsdam,Brandenburg,106.6,101.0,120.1
+12060,Barnim,Brandenburg,97.6,99.2,93.8
+12061,Dahme-Spreewald,Brandenburg,101.3,99.4,105.9
+12062,Elbe-Elster,Brandenburg,91.9,99.5,73.5
+12063,Havelland,Brandenburg,98.5,99.4,96.2
+12064,Märkisch-Oderland,Brandenburg,98.0,100.0,92.9
+12065,Oberhavel,Brandenburg,100.3,99.1,103.0
+12066,Oberspreewald-Lausitz,Brandenburg,92.2,98.9,75.8
+12067,Oder-Spree,Brandenburg,97.0,98.9,92.2
+12068,Ostprignitz-Ruppin,Brandenburg,93.2,98.4,80.8
+12069,Potsdam-Mittelmark,Brandenburg,100.9,99.8,103.5
+12070,Prignitz,Brandenburg,91.5,98.7,74.1
+12071,Spree-Neiße,Brandenburg,91.5,99.3,72.7
+12072,Teltow-Fläming,Brandenburg,97.8,99.8,92.7
+12073,Uckermark,Brandenburg,93.5,99.4,79.2
+13003,Rostock,Mecklenburg-Vorpommern,99.6,99.7,99.2
+13004,Schwerin,Mecklenburg-Vorpommern,96.4,99.9,87.8
+13071,Mecklenburgische Seenplatte,Mecklenburg-Vorpommern,92.9,98.6,78.8
+13072,Landkreis Rostock,Mecklenburg-Vorpommern,95.1,98.7,86.3
+13073,Vorpommern-Rügen,Mecklenburg-Vorpommern,95.7,99.1,87.4
+13074,Nordwestmecklenburg,Mecklenburg-Vorpommern,95.7,99.8,85.6
+13075,Vorpommern-Greifswald,Mecklenburg-Vorpommern,96.2,98.5,90.5
+13076,Ludwigslust-Parchim,Mecklenburg-Vorpommern,93.0,98.9,78.6
+14511,Chemnitz,Sachsen,92.1,99.2,75.1
+14521,Erzgebirgskreis,Sachsen,91.3,98.9,72.7
+14522,Mittelsachsen,Sachsen,91.7,98.9,74.2
+14523,Vogtlandkreis,Sachsen,90.5,99.7,68.0
+14524,Zwickau,Sachsen,91.4,98.6,74.0
+14612,Dresden,Sachsen,99.4,100.4,97.2
+14625,Bautzen,Sachsen,92.4,99.1,76.2
+14626,Görlitz,Sachsen,90.6,99.3,69.3
+14627,Meißen,Sachsen,93.4,99.7,78.0
+14628,Sächsische Schweiz-Osterzgebirge,Sachsen,94.0,99.6,80.5
+14713,Leipzig,Sachsen,96.4,100.0,87.6
+14729,Landkreis Leipzig,Sachsen,92.2,98.7,76.6
+14730,Nordsachsen,Sachsen,92.7,99.1,77.1
+15001,Dessau-Roßlau,Sachsen-Anhalt,92.8,99.3,77.1
+15002,Halle (Saale),Sachsen-Anhalt,94.6,99.7,82.2
+15003,Magdeburg,Sachsen-Anhalt,94.1,99.4,81.1
+15081,Altmarkkreis Salzwedel,Sachsen-Anhalt,91.0,98.9,71.6
+15082,Anhalt-Bitterfeld,Sachsen-Anhalt,92.5,99.0,76.6
+15083,Börde,Sachsen-Anhalt,92.0,99.3,74.2
+15084,Burgenlandkreis,Sachsen-Anhalt,91.2,98.5,73.3
+15085,Landkreis Harz,Sachsen-Anhalt,91.4,98.7,73.7
+15086,Jerichower Land,Sachsen-Anhalt,91.7,98.6,74.9
+15087,Mansfeld-Südharz,Sachsen-Anhalt,92.0,99.3,74.1
+15088,Saalekreis,Sachsen-Anhalt,92.7,99.4,76.5
+15089,Salzlandkreis,Sachsen-Anhalt,90.7,98.6,71.7
+15090,Stendal,Sachsen-Anhalt,91.3,98.6,73.4
+15091,Wittenberg,Sachsen-Anhalt,91.6,99.1,73.4
+16051,Erfurt,Thüringen,98.1,100.0,93.5
+16052,Gera,Thüringen,91.4,99.0,72.8
+16053,Jena,Thüringen,103.1,100.3,109.8
+16054,Suhl,Thüringen,93.5,98.5,81.3
+16055,Weimar,Thüringen,97.5,99.2,93.3
+16061,Landkreis Eichsfeld,Thüringen,92.4,99.0,76.4
+16062,Landkreis Nordhausen,Thüringen,91.8,98.4,75.6
+16063,Wartburgkreis,Thüringen,92.5,99.4,75.9
+16064,Unstrut-Hainich-Kreis,Thüringen,91.5,98.8,74.0
+16065,Kyffhäuserkreis,Thüringen,91.6,98.6,74.5
+16066,Landkreis Schmalkalden-Meiningen,Thüringen,92.5,98.5,77.9
+16067,Landkreis Gotha,Thüringen,93.5,99.6,78.9
+16068,Landkreis Sömmerda,Thüringen,92.7,98.7,78.4
+16069,Landkreis Hildburghausen,Thüringen,91.5,98.5,74.6
+16070,Ilm-Kreis,Thüringen,94.1,98.9,82.6
+16071,Landkreis Weimarer Land,Thüringen,94.2,99.9,80.3
+16072,Landkreis Sonneberg,Thüringen,91.6,98.8,74.1
+16073,Landkreis Saalfeld-Rudolstadt,Thüringen,92.5,98.9,77.1
+16074,Saale-Holzland-Kreis,Thüringen,92.8,98.7,78.6
+16075,Saale-Orla-Kreis,Thüringen,91.9,98.9,75.1
+16076,Greiz,Thüringen,90.5,99.1,69.5
+16077,Altenburger Land,Thüringen,90.9,98.5,72.3
