@@ -40,6 +40,12 @@ local england_only = 1
 * >>> ASSUMPTION [A5]: keep the Jan-Mar 2015 households (separate file in SN 8210)
 *     so there is no gap in calendar time. Set to 0 to drop them.
 local include_2015q1 = 1
+**# FIX [A11]: housing benefit add-back - switch
+* >>> ASSUMPTION [A11]: count rent paid by housing benefit as consumption, i.e.
+*     add the rent rebate b230 back onto the net rent inside p604t/p600t.
+*     Set to 0 to reproduce the published (net-of-benefit) ONS totals.
+local add_back_hb = 1
+**# END FIX [A11]
 
 *------------------------------------------------------------------------------
 * Print the assumptions to the shell
@@ -75,6 +81,21 @@ di as text "[A9] Known breaks (NOT harmonised, see README section 8):" _n ///
    "     2020-21 COVID (phone interviews, thin Apr 2020)."
 di as text "[A10] hhid = SN*100000 + case: unique across the pool. LCF is not a" _n ///
    "     panel; the same address is never linked across years."
+**# FIX [A11]: housing benefit add-back - printed assumption
+di as text "[A11] Housing benefit added back to rent: " ///
+   cond(`add_back_hb', "ON", "OFF (published net totals)") _n ///
+   "     ONS nets rent rebates/housing benefit (b230) out of rent (b010, b020)," _n ///
+   "     so benefit-funded rent is not consumption in p600t, and net rent can" _n ///
+   "     go below zero (benefit > rent): every negative p600t comes from this." _n ///
+   "     With [A11] ON: cons = p600t + b230, c_housing = p604t + b230." _n ///
+   "     Net rent + b230 equals gross rent p257 for 97-99% of renters." _n ///
+   "     b230 is the only housing transfer netted out of p600t (council tax" _n ///
+   "     rebates sit in non-consumption). Universal Credit's housing element is" _n ///
+   "     paid to the tenant, so UC claimants should already report gross rent" _n ///
+   "     (not checkable in public data): [A11] then also makes HB and UC" _n ///
+   "     claimants comparable as UC replaces HB (2018+)." _n ///
+   "     Published p600t is kept as cons_annual_pub."
+**# END FIX [A11]
 di as text "{hline 78}" _n
 
 *------------------------------------------------------------------------------
@@ -160,7 +181,8 @@ program define _lcf_read
     * so a p601t-p612t range would pull in unrelated variables
     keep case weighta weightq gorx year a055 a099 a049 p600t ///
          p601t p602t p603t p604t p605t p606t p607t p608t p609t p610t ///
-         p611t p612t p620tp p630tp
+         p611t p612t p620tp p630tp ///
+         b010 b020 b230 p257   // FIX [A11]: rent variables for the add-back
     * strip value labels so the 15 files append cleanly
     foreach v of varlist _all {
         label values `v'
@@ -250,6 +272,33 @@ foreach d of local divs {
     local ++i
 }
 
+**# FIX [A11]: housing benefit add-back - computation
+foreach v in b010 b020 b230 p257 {
+    replace `v' = 0 if missing(`v')
+}
+gen double _netrent = b010 + b020
+quietly count if _netrent != 0 | p257 != 0 | b230 != 0
+local nrent = r(N)
+quietly count if (_netrent != 0 | p257 != 0 | b230 != 0) & ///
+    abs(_netrent + b230 - p257) < 0.02
+di as text "Renters with net rent + b230 = gross rent p257: " ///
+   as result %5.1f 100*r(N)/`nrent' "%"
+quietly count if _netrent < 0
+di as text "Households with negative net rent (b230 > rent): " as result r(N)
+
+gen double cons_annual_pub = cons_annual
+gen double hb_annual       = b230 * `weeks_per_year'
+if `add_back_hb' {
+    replace cons_week   = cons_week + b230
+    replace cons_annual = cons_week * `weeks_per_year'
+    replace c_housing   = c_housing + hb_annual
+}
+* the divisions still add up to the total after the add-back
+egen double _sumdiv = rowtotal(c_*)
+assert abs(_sumdiv - cons_annual) < 0.6 * `weeks_per_year'
+drop _sumdiv _netrent b010 b020 b230 p257
+**# END FIX [A11]
+
 * Not consumption, kept for reference. 2024-25: mortgage interest (b150p) is
 * suppressed for many mortgagors in the public file, so p620tp is unreliable.
 gen double noncons_annual  = p620tp * `weeks_per_year'
@@ -308,6 +357,16 @@ label var neg_cons      "Negative total consumption (refunds/sales exceed spendi
 order hhid sn case survey_year q1_2015 int_year int_quarter int_month reissue ///
       gorx hhsize wt_annual wt_quarter cons_week cons_annual c_* ///
       noncons_annual totexp_annual neg_cons
+**# FIX [A11]: housing benefit add-back - labels
+local hbtxt = cond(`add_back_hb', " + b230", "")
+local hstxt = cond(`add_back_hb', "gross of HB", "net of HB")
+label var cons_week     "Consumption, GBP/week, nominal (p600t`hbtxt')"
+label var cons_annual   "Consumption, GBP/year, nominal ((p600t`hbtxt') x `weeks_per_year')"
+label var c_housing     "04 Housing (rent `hstxt'), fuel & power, GBP/yr (p604t`hbtxt')"
+label var cons_annual_pub "Published ONS consumption, GBP/year (p600t x `weeks_per_year'), net of HB"
+label var hb_annual     "Housing benefit / rent rebate, GBP/year (b230 x `weeks_per_year')"
+order cons_annual_pub hb_annual, after(c_misc)
+**# END FIX [A11]
 sort survey_year hhid
 compress
 
@@ -316,6 +375,10 @@ notes: Built by build_lcf_consumption.do on `c(current_date)'.
 notes: Consumption = published p600t; see uk-lcf-consumption/README.md.
 notes: England only = `england_only'; Jan-Mar 2015 included = `include_2015q1'.
 notes: Breaks: 2013 housing/transport, 2018-19 communication/recreation, 2020-21 COVID.
+**# FIX [A11]: housing benefit add-back - dataset label and note
+label data "LCF 2011-2024/25, household annual consumption ((p600t`hbtxt') x `weeks_per_year'), nominal GBP"
+notes: Housing benefit (b230) added back to rent = `add_back_hb'; published p600t in cons_annual_pub.
+**# END FIX [A11]
 
 save "$LCF_OUT", replace
 
@@ -324,6 +387,10 @@ save "$LCF_OUT", replace
 *------------------------------------------------------------------------------
 di _n as result "Households (N) and weighted mean annual consumption (nominal GBP)"
 tabstat cons_annual [aw=wt_annual], by(survey_year) stat(n mean) format(%9.0fc) nototal
+**# FIX [A11]: housing benefit add-back - summary
+tabstat cons_annual cons_annual_pub hb_annual [aw=wt_annual], by(survey_year) ///
+    stat(mean) format(%9.0fc) nototal
+**# END FIX [A11]
 quietly count if neg_cons
 di as text "Households with negative consumption: " as result r(N)
 di as text "Saved: $LCF_OUT  (" as result _N as text " rows)"
