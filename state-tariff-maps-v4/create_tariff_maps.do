@@ -545,69 +545,39 @@ draw_state_map delta_burden_pGDP,                                     ///
     outfile("$FIG\share_heterogeneity.pdf") name(burden)
 	
 //------------------------------------------------------------------------------
-* Three-panel scatter: change in tariff burden (pp of GDP), Jan -> Oct 2025,
-* against (A) the change in the actual effective rate, (B) the change in the
-* partner-margin rate and (C) the change in the sector-margin rate (pp).
-* Margins come from state-tariff-heterogeneity/scripts/counterfactual_margins.py
-* (d_partner_only, d_product_only); put the CSV in $RAW.
+* Scatter: change in tariff burden (pp of GDP) vs change in effective rate (pp)
 //------------------------------------------------------------------------------
 
-tempfile margins
-import delimited "$RAW\state_counterfactual_margins_change_jan_oct2025.csv", clear
-keep state d_partner_only d_product_only
-save "`margins'", replace
-
 use "`prep'.dta", clear
-merge 1:1 state using "`margins'", keep(match) nogen
-keep if !mi(delta_rate, d_partner_only, d_product_only, delta_burden_pGDP)
+keep if !mi(delta_rate) & !mi(delta_burden_pGDP)
 
-* ---- common axes for all three panels: start at 0, round tops --------------
-local xmax = 0
-foreach v in delta_rate d_partner_only d_product_only {
-    qui sum `v'
-    local xmax = max(`xmax', r(max))
-}
-local xtop = ceil(`xmax'/5)*5
+* x-axis from 0 to a round top; the fit line spans the full axis
+qui sum delta_rate
+local xtop = ceil(r(max)/5)*5
 
+* y-axis covers the data and both ends of the fit line
+qui regress delta_burden_pGDP delta_rate
+local yfit0 = _b[_cons]
+local yfit1 = _b[_cons] + _b[delta_rate]*`xtop'
 qui sum delta_burden_pGDP
-local ymax = r(max)
-foreach v in delta_rate d_partner_only d_product_only {
-    qui regress delta_burden_pGDP `v'
-    qui sum `v'
-    local ymax = max(`ymax', _b[_cons] + _b[`v']*r(max))   // fit line end (data range)
-}
-local ystep = cond(`ymax' <= 1, 0.2, cond(`ymax' <= 3, 0.5, 1))
-local ytop  = ceil(`ymax'/`ystep')*`ystep'
+local ylo   = min(0, r(min), `yfit0')
+local yhi   = max(r(max), `yfit1')
+local ystep = cond(`yhi' - `ylo' <= 1, 0.2, cond(`yhi' - `ylo' <= 3, 0.5, 1))
+local ybot  = floor(`ylo'/`ystep')*`ystep'
+local ytop  = ceil(`yhi'/`ystep')*`ystep'
 
-* ---- one panel (same style as the dominance figures) ------------------------
-cap program drop burden_panel
-program define burden_panel
-    syntax varname, xtitle(string) name(string) xtop(real) ytop(real) ystep(real)
-    twoway                                                                  ///
-        (lfit delta_burden_pGDP `varlist',                                  ///
-            lcolor(gs8) lpattern(dash) lwidth(medthin))                     ///
-        (scatter delta_burden_pGDP `varlist',                               ///
-            mcolor(blue) msymbol(O) msize(medium)                           ///
-            mlabel(state) mlabposition(3) mlabcolor(blue)                   ///
-            mlabsize(small) mlabgap(*0.6)),                                 ///
-        ytitle("Change in tariff burden (pp of GDP)", size(medlarge))       ///
-        xtitle("`xtitle'", size(medlarge))                                  ///
-        xscale(range(0 `xtop')) yscale(range(0 `ytop'))                     ///
-        xlabel(0(5)`xtop', labsize(medlarge) nogrid noticks)                ///
-        ylabel(0(`ystep')`ytop', format(%3.1f) labsize(medlarge) angle(90)  ///
-               nogrid noticks)                                              ///
-        plotregion(style(none) margin(small)) graphregion(color(white))     ///
-        aspectratio(1) legend(off) title("") name(`name', replace) nodraw
-end
-
-burden_panel delta_rate,     xtitle("Change in actual effective rate (pp)") ///
-    name(p_rate)    xtop(`xtop') ytop(`ytop') ystep(`ystep')
-burden_panel d_partner_only, xtitle("Change in partner margin rate (pp)")   ///
-    name(p_partner) xtop(`xtop') ytop(`ytop') ystep(`ystep')
-burden_panel d_product_only, xtitle("Change in sector margin rate (pp)")    ///
-    name(p_sector)  xtop(`xtop') ytop(`ytop') ystep(`ystep')
-
-graph combine p_rate p_partner p_sector, rows(1) iscale(1) imargin(small)   ///
-    xsize(16.5) ysize(5.5) graphregion(color(white))
+twoway ///
+	(scatter delta_burden_pGDP delta_rate, ///
+	mcolor(blue) msymbol(O) msize(medlarge) ///
+	mlabel(state) mlabcolor(blue) mlabsize(small) mlabposition(3) mlabgap(*0.5)) ///
+	(lfit delta_burden_pGDP delta_rate, range(0 `xtop') lwidth(medthick)), ///
+	title("") ///
+	ytitle("Change in tariff burden (pp of GDP)", size(medlarge)) ///
+	xtitle("Change in actual effective rate (pp)", size(medlarge)) ///
+	xscale(range(0 `xtop')) yscale(range(`ybot' `ytop')) ///
+	xlabel(0(5)`xtop', noticks nogrid labsize(medium)) ///
+	ylabel(`ybot'(`ystep')`ytop', noticks nogrid labsize(medium) angle(90) format(%3.1f)) ///
+	plotregion(lcolor(black) lwidth(thin) margin(l=0 r=0 t=2 b=2)) ///
+	xsize(6.5) ysize(4.5) legend(off) graphregion(color(white)) plotregion(color(white))
 
 graph export "$FIG\scatter_rate_burden.pdf", replace
