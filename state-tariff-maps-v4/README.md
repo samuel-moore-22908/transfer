@@ -26,7 +26,7 @@ Placement was checked by running the map section in Stata 18 on synthetic data w
 ## Scatter
 
 - Same design as the original figure: blue markers labelled with state codes to the right, the red linear fit line in the scheme's default colour, and a thin plot outline.
-- Sized to fill a LaTeX text width: a 6.5 × 4.5 inch canvas with no forced square plot (`aspectratio(1)` removed), so it can be included at `\includegraphics[width=	extwidth]` without blank side margins.
+- Sized to fill a LaTeX text width: a 6.5 × 4.5 inch canvas with no forced square plot (`aspectratio(1)` removed), so it can be included at `\includegraphics[width=\textwidth]` without blank side margins.
 - The fit line spans the full x-axis (`lfit ..., range(0 xtop)`), and the plot region has no side padding, so the line runs edge to edge.
 - Axes start at 0 (lower if the fit intercept is negative), with round tops set from the data and the fit line's endpoints. Tick labels are `medium`; the y-axis uses one decimal place.
 - y-title shortened to "Change in tariff burden (pp of GDP)" so it is not cut off.
